@@ -1,13 +1,4 @@
-"""
-Fase 2 - Limpieza del Excel de ONE (IPC por articulos, base oct 2019 - sep 2020).
 
-Entrada : data/raw/ipc_articulos_base_2019-2020.xlsx  (hoja "2020-2026")
-Salida  : data/processed/ipc_largo.parquet   todos los niveles, formato largo
-          data/processed/ipc_salud.parquet   solo el grupo 06 Salud
-          data/processed/ipc_grupos.parquet  indice general + 12 grupos
-
-Como correrlo, desde la raiz del proyecto:  python src/limpiar_ipc.py
-"""
 from pathlib import Path
 
 import pandas as pd
