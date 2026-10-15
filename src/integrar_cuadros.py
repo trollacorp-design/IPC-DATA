@@ -1,19 +1,4 @@
-"""
-Fase 4 - Integra las tablas oficiales del BCRD (Cuadros 3.1, 3.3 y 3.8, y el Anexo 3).
 
-Entradas (en data/raw, se buscan por patron de nombre):
-  Cuadros*2025*.xlsx   -> hojas CUADRO 3.1 (IPC general), 3.3 (12 grupos), 3.8 (subyacente)
-  Anexos*.xlsx         -> hoja Anexo 3 (clasificacion bien/servicio, transable, subyacente)
-  data/processed/ipc_largo.parquet (fase 2), que aporta 2026 y la jerarquia de Salud
-
-Salidas (data/processed):
-  ipc_series_oficiales.parquet   general + 12 grupos, 1999-2026, con variaciones
-  subyacente.parquet             IPC general y subyacente, 2000-2026
-  anexo3_clasificacion.parquet   364 articulos con su clasificacion
-  salud_componentes.parquet      los 49 nodos de Salud con peso y clasificacion
-
-Como correrlo, desde la raiz del proyecto:  python src/integrar_cuadros.py
-"""
 import re
 import unicodedata
 from pathlib import Path
