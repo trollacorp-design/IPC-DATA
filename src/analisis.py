@@ -1,12 +1,4 @@
-"""
-Fase 5 - Analisis: (A) Salud contra el IPC general, (B) que mueve a Salud, (C) ejercicio de indexacion.
 
-Entradas (data/processed): ipc_series_oficiales.parquet (fase 4), ipc_largo.parquet (fase 2)
-Salidas  (data/processed): analisis_brecha.parquet, analisis_contribuciones.parquet,
-                           analisis_indexacion.parquet
-
-Como correrlo, desde la raiz del proyecto:  python src/analisis.py
-"""
 from pathlib import Path
 
 import pandas as pd
