@@ -1,10 +1,4 @@
-"""
-Fase 6 - Dashboard interactivo (Dash): IPC de Salud del BCRD y la indexacion del per capita del PDSS.
 
-Lee los Parquet de data/processed (fases 2 a 5). Como correrlo, desde la raiz del proyecto:
-    python dashboard/app.py
-y abrir http://127.0.0.1:8050 en el navegador.
-"""
 from pathlib import Path
 
 import pandas as pd
