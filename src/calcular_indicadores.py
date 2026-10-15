@@ -1,19 +1,4 @@
-"""
-Fase 3 - Indicadores del IPC: variaciones e incidencias para todos los niveles.
 
-Entrada : data/processed/ipc_largo.parquet            (resultado de la fase 2)
-Salida  : data/processed/ipc_indicadores.parquet      todos los nodos
-          data/processed/ipc_salud_indicadores.parquet solo el grupo 06 Salud
-
-Indicadores (en %, salvo las incidencias que van en puntos porcentuales):
-  var_mensual    : contra el mes anterior
-  var_acumulada  : contra diciembre del ano anterior
-  var_interanual : contra el mismo mes del ano anterior (la "inflacion" que se reporta)
-  inc_mensual    : aporte del nodo a la variacion mensual del IPC general
-  inc_interanual : aporte del nodo a la variacion interanual del IPC general
-
-Como correrlo, desde la raiz del proyecto:  python src/calcular_indicadores.py
-"""
 from pathlib import Path
 
 import pandas as pd
