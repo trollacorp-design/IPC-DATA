@@ -1,0 +1,7 @@
+pandas
+openpyxl
+pyarrow
+pdfplumber
+plotly
+dash
+ipykernel
